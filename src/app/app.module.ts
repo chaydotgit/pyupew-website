@@ -17,7 +17,7 @@ import { WorkComponent } from './work/work.component';
     CommissionsComponent,
     HomeComponent,
     FooterComponent,
-    WorkComponent
+    WorkComponent,
   ],
   imports: [
     BrowserModule,
