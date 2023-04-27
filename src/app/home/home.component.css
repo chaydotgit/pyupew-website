@@ -1,0 +1,20 @@
+.welcome {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  background-color: #ff9cd4;
+  padding: 30px 30px 30px;
+  margin: 40px 40px 40px;
+  border-radius: 9px;
+}
+.fa {
+  padding: 10px;
+  font-size: 25px !important;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50px;
+  margin: 2px;
+  background-color: white;
+  color: #ff9cd4;
+}
