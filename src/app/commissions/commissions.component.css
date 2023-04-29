@@ -1,20 +1,44 @@
+.title {
+  font-family: 'Lulo Clean', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 20px 5%;
+  padding: 10px;
+  color: #ff9cd4;
+  border-color: #ff9cd4;
+  border-style: solid;
+  border-radius: 9px;
+}
+
+
+@media screen and (min-width: 800px) {
+  .title {
+    margin: 20px 20%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .title {
+    margin: 20px 25%;
+  }
+}
+
 .commissions {
   display: flex;
   flex-direction: column;
   color: white;
   background-color: #ff9cd4;
   padding: 30px 30px 30px;
-  margin: 40px 40px 40px;
+  margin: 20px 40px 40px;
   border-radius: 9px;
 }
 
-.title {
-  display: flex;
-  flex-direction: column;
-  color: #ff9cd4;
-  padding: 10px 10px 10px;
-  margin: 10px 30%;
-  border-color: #ff9cd4;
-  border-style: solid;
-  border-radius: 9px;
+.rules {
+  text-align: left;
+  margin: 10px 30px;
+}
+
+h3 {
+  font-family: 'Lulo Clean', sans-serif;
 }

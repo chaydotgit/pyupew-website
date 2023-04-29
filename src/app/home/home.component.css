@@ -1,20 +1,72 @@
 .welcome {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   color: white;
   background-color: #ff9cd4;
   padding: 30px 30px 30px;
-  margin: 40px 40px 40px;
+  margin: 20px 40px;
   border-radius: 9px;
 }
+
+h1 {
+  font-family: 'Lulo Clean', sans-serif;
+  padding-left: 6px;
+}
+
+h2 {
+  font-family: 'Lulo Clean', sans-serif;
+  padding-left: 4px;
+}
+
+@media screen and (min-width: 800px) {
+  .welcome {
+    padding: 30px 100px 30px;
+  }
+}
+
+hr.rounded {
+  border-top: 2px solid white;
+  margin: 20px auto 20px;
+  width: 20%;
+}
+
+.profile-img {
+  width: 300px;
+  border-radius: 8px;
+  margin: 1px auto 10px;
+}
+
+.socials {
+  padding: 10px 10px 10px;
+}
+
 .fa {
   padding: 10px;
   font-size: 25px !important;
   width: 50px;
   text-align: center;
   text-decoration: none;
-  border-radius: 50px;
+  border-radius: 8px;
   margin: 2px;
+
   background-color: white;
   color: #ff9cd4;
 }
+
+.contact-button {
+  border: none;
+  color: #ff9cd4;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px 10px;
+  margin: auto;
+  text-align: center;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
