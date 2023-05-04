@@ -1,5 +1,5 @@
 .title {
-  font-family: 'Lulo Clean', sans-serif;
+  font-family: silkscreennormal;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -34,11 +34,38 @@
   border-radius: 9px;
 }
 
+table {
+  border-collapse: collapse;
+  margin: 2px auto 12px;
+  width: auto;
+}
+
+td, th {
+  font-family: silkscreennormal;
+  border: 1px solid white;
+  text-align: center;
+  padding: 8px 20px;
+}
+
 .rules {
   text-align: left;
   margin: 10px 30px;
 }
 
+h2 {
+  font-family: silkscreennormal;
+}
+
 h3 {
-  font-family: 'Lulo Clean', sans-serif;
+  font-family: silkscreennormal;
+}
+
+.options {
+  float: left;
+  width: 50%;
+  text-align: left;
+}
+
+.option-item {
+  padding: 5px 5px 5px;
 }

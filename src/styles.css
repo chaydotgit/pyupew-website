@@ -14,3 +14,26 @@ footer {
   padding: 10px;
   width: 100%;
 }
+
+@font-face {
+  font-family: 'silkscreennormal';
+  src: url('assets/Silkscreen-fontfacekit/web fonts/silkscreen_normal_macroman/slkscr-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'silkscreenbold';
+  src: url('assets/Silkscreen-fontfacekit/web fonts/silkscreen_bold_macroman/slkscrb-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'silkscreen_expandednormal';
+  src: url('assets/Silkscreen-fontfacekit/web fonts/silkscreenexpanded_normal_macroman/slkscre-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}

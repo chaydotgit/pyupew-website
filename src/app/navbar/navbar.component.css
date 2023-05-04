@@ -1,1 +1,10 @@
 
+.nav-link {
+  font-family: silkscreennormal;
+  color: #ff9cd4;
+}
+
+.nav-link:hover {
+  color: #ff21a1;
+}
+
