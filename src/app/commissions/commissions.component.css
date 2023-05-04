@@ -60,12 +60,31 @@ h3 {
   font-family: silkscreennormal;
 }
 
-.options {
-  float: left;
-  width: 50%;
-  text-align: left;
+.option {
+  margin: 5px 5px 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.option-item {
+.desc-item {
+  width: 100%;
+  text-align: left;
   padding: 5px 5px 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.example-item {
+  width: 100%;
+  padding: 5px 5px 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (min-width: 800px) {
+  .option {
+    flex-direction: row;
+  }
 }
