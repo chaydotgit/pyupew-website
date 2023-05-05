@@ -1,27 +1,16 @@
 .title {
   font-family: silkscreennormal;
   display: flex;
+  text-align: center;
   align-items: center;
   justify-content: space-evenly;
-  margin: 20px 5%;
+  margin: 20px 10%;
   padding: 10px;
-  color: #ff9cd4;
+  color: white;
+  background-color: #ff9cd4;
   border-color: #ff9cd4;
   border-style: solid;
   border-radius: 9px;
-}
-
-
-@media screen and (min-width: 800px) {
-  .title {
-    margin: 20px 20%;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .title {
-    margin: 20px 25%;
-  }
 }
 
 .commissions {
@@ -30,9 +19,10 @@
   color: white;
   background-color: #ff9cd4;
   padding: 30px 30px 30px;
-  margin: 20px 40px 40px;
+  margin: 20px 5% 40px;
   border-radius: 9px;
 }
+
 
 table {
   border-collapse: collapse;
@@ -42,7 +32,9 @@ table {
 
 td, th {
   font-family: silkscreennormal;
-  border: 1px solid white;
+  border: 1px solid #ff9cd4;
+  color: #ff9cd4;
+  background-color: white;
   text-align: center;
   padding: 8px 20px;
 }
@@ -83,8 +75,53 @@ h3 {
   align-items: center;
 }
 
+img {
+  width: 100%;
+}
+
+@media screen and (min-width: 600px) {
+  .title {
+    margin: 20px 20%;
+  }
+
+  .commissions {
+    margin: 20px 5% 40px;
+    padding: 30px 20% 30px;
+  }
+
+  img {
+    width: 100%;
+  }
+
+}
+
 @media screen and (min-width: 800px) {
+  .title {
+    margin: 20px 30%;
+  }
+
+  .commissions {
+    margin: 20px 10% 40px;
+    padding: 30px 10% 30px;
+  }
+
+  img {
+    width: 50%;
+  }
+
+}
+
+@media screen and (min-width: 1280px) {
+  .title {
+    margin: 20px 25%;
+  }
+
   .option {
     flex-direction: row;
   }
+
+  img {
+    width: 60%;
+  }
+
 }
