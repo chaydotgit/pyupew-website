@@ -7,12 +7,18 @@
 body {
   margin-bottom: 60px;
 }
+
 footer {
   background-color: white;
   position: fixed;
   bottom: 0;
   padding: 10px;
   width: 100%;
+}
+
+html {
+  font-family: Verdana;
+  font-size: large;
 }
 
 @font-face {

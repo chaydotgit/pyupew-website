@@ -6,7 +6,7 @@
   color: white;
   background-color: #ff9cd4;
   padding: 30px 30px 30px;
-  margin: 20px 40px;
+  margin: 20px 40px 20px;
   border-radius: 9px;
 }
 
@@ -20,12 +20,6 @@ h2 {
   padding-left: 4px;
 }
 
-@media screen and (min-width: 800px) {
-  .welcome {
-    padding: 30px 100px 30px;
-    margin: 20px 300px;
-  }
-}
 
 hr.rounded {
   border-top: 2px solid white;
@@ -36,7 +30,7 @@ hr.rounded {
 .profile-img {
   width: 300px;
   border-radius: 8px;
-  margin: 1px auto 10px;
+  margin-bottom: 20px;
 }
 
 .socials {
@@ -70,4 +64,16 @@ hr.rounded {
   cursor: pointer;
 }
 
+@media screen and (min-width: 800px) {
+  .welcome {
+    padding: 30px 40px 30px;
+    margin: 20px 100px;
+  }
+}
 
+@media screen and (min-width: 1280px) {
+  .welcome {
+    padding: 30px 40px 30px;
+    margin: 20px 300px;
+  }
+}
