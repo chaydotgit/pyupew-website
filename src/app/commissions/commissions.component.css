@@ -87,10 +87,16 @@ h4 {
 
 .example-item {
   width: 100%;
-  padding: 5px 5px 5px;
+  padding: 20px 20px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 4px;
 }
 
 .description {
@@ -111,12 +117,6 @@ h4 {
   border-radius: 4px;
 }
 
-img {
-  width: 100%;
-  border-radius: 4px;
-  margin: 10px 0px 10px;
-}
-
 .process {
   font-family: silkscreennormal;
   font-size: 10px;
@@ -134,13 +134,23 @@ img {
   display: inline-block;
 }
 
-.process-arrow {
-  font-size: 20px;
-}
-
 .process-description {
   text-align: left;
   font-size: 18px;
+}
+
+.button {
+  border: none;
+  color: #ff9cd4;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px 10px;
+  margin: auto;
+  text-align: center;
+  display: inline-block;
+  font-family: silkscreennormal;
+  font-size: 20px;
+  cursor: pointer;
 }
 
 .template-top {
@@ -171,19 +181,11 @@ img {
     margin: 20px 20%;
   }
 
-  img {
-    width: 100%;
-  }
-
   .process {
     font-size: 14px;
   }
 
   .process-icon {
-    font-size: 24px;
-  }
-
-  .process-arrow {
     font-size: 24px;
   }
 }
@@ -198,19 +200,11 @@ img {
     padding: 30px 10% 30px;
   }
 
-  img {
-    width: 50%;
-  }
-
   .process {
     font-size: 18px;
   }
 
   .process-icon {
-    font-size: 32px;
-  }
-
-  .process-arrow {
     font-size: 32px;
   }
 }
@@ -223,19 +217,18 @@ img {
   .option {
     flex-direction: row;
   }
-
-  .desc-item {
-    margin: 20px;
-  }
-
-  img {
-    width: 60%;
-  }
-
 }
 
 @media screen and (min-width: 1920px) {
   .commissions {
     margin: 20px 300px 20px;
+  }
+
+  .desc-item {
+    flex: 2;
+  }
+
+  .example-item {
+    flex: 1.25;
   }
 }
