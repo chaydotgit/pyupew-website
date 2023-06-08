@@ -42,6 +42,16 @@ td, th {
 .rules {
   text-align: left;
   margin: 10px 30px;
+  display: flex;
+  flex-direction: row;
+}
+
+.dos {
+  flex: 1;
+}
+
+.donts {
+  flex: 1;
 }
 
 h2 {
