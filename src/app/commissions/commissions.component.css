@@ -18,8 +18,8 @@
   flex-direction: column;
   color: white;
   background-color: #ff9cd4;
-  padding: 30px 30px 30px;
-  margin: 20px 40px 20px;
+  padding: 30px 5% 30px;
+  margin: 20px 2% 20px;
   border-radius: 9px;
 }
 
@@ -43,7 +43,7 @@ td, th {
   text-align: left;
   margin: 10px 30px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .dos {
@@ -203,6 +203,10 @@ img {
 
   .process-icon {
     font-size: 24px;
+  }
+
+  .rules {
+    flex-direction: row;
   }
 }
 
