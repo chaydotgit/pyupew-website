@@ -9,6 +9,7 @@ import { HomeComponent } from './home/home.component';
 import { AppRoutingModule } from './app-routing.module';
 import { FooterComponent } from './footer/footer.component';
 import { WorkComponent } from './work/work.component';
+import { SupportComponent } from './support/support.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { WorkComponent } from './work/work.component';
     HomeComponent,
     FooterComponent,
     WorkComponent,
+    SupportComponent,
   ],
   imports: [
     BrowserModule,

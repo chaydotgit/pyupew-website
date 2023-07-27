@@ -1,0 +1,59 @@
+.title {
+  font-family: silkscreennormal;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 20px 10%;
+  padding: 10px;
+  color: white;
+  background-color: #ff9cd4;
+  border-color: #ff9cd4;
+  border-style: solid;
+  border-radius: 9px;
+}
+
+.body-text {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  background-color: #ff9cd4;
+  padding: 30px 5% 30px;
+  margin: 20px 2% 20px;
+  border-radius: 9px;
+}
+
+.kofi-container {
+  text-align: center;
+  padding: 20px 5px 0px;
+}
+
+#kofiframe {
+  margin: 4px;
+  width: 400px;
+  height: 650px;
+  border-radius: 7px;
+}
+
+@media screen and (min-width: 800px) {
+  .title {
+    margin: 20px 30%;
+  }
+
+  .body-text {
+    margin: 20px 10% 20px;
+    padding: 30px 10% 30px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .title {
+    margin: 20px 25%;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .body-text {
+    margin: 20px 300px 20px;
+  }
+}
