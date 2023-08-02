@@ -5,12 +5,21 @@
 @import url('https://fonts.cdnfonts.com/css/lulo-clean');
 
 body {
-  margin-bottom: 60px;
+  background-image: url("src/assets/images/pawel-czerwinski-Pv8HPFPp6IA-unsplash.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+
+body::after {
+  content: '';
+  display: block;
+  height: 50px; /* Set same as footer's height */
 }
 
 footer {
   background-color: white;
-  position: fixed;
+  position: absolute;
   bottom: 0;
   padding: 10px;
   width: 100%;
