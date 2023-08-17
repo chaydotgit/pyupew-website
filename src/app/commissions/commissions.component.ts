@@ -33,7 +33,7 @@ export class ContactModalContent {
   styleUrls: ['./commissions.component.css']
 })
 export class CommissionsComponent implements OnInit {
-
+  commissionStatus = false;
   constructor(private modalService: NgbModal) { }
 
   ngOnInit(): void {

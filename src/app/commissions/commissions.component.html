@@ -4,28 +4,28 @@
 
 <div class="commissions text-center">
   <h2>STATUS:</h2>
-  <h2>OPEN <i class="bi bi-sun"></i></h2>
-  <h2>CLOSED <i class="bi bi-moon-stars"></i></h2>
+  <h2 *ngIf="commissionStatus">OPEN <i class="bi bi-sun"></i></h2>
+  <h2 *ngIf="!commissionStatus">CLOSED <i class="bi bi-moon-stars"></i></h2>
 
   <hr>
-
-  <h3>Slots</h3>
-  <table>
-    <tr>
-      <th>1</th>
-      <td>OPEN</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>OPEN</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>OPEN</td>
-    </tr>
-  </table>
-
-  <hr>
+  <div *ngIf="commissionStatus">
+    <h3>Slots</h3>
+    <table>
+      <tr>
+        <th>1</th>
+        <td>OPEN</td>
+      </tr>
+      <tr>
+        <th>2</th>
+        <td>OPEN</td>
+      </tr>
+      <tr>
+        <th>3</th>
+        <td>OPEN</td>
+      </tr>
+    </table>
+    <hr>
+  </div>
 
   <h3><i class="bi bi-stars"></i> Rules <i class="bi bi-stars"></i></h3>
   <p class="text-center">
@@ -273,10 +273,11 @@
       </li>
       <li>
         <span style="font-weight: bold">Payment:</span> Payment is needed before the commission is finished in order to receive the final product. I take payment through
-        (insert payment methods here)
+        Stripe (preferred). Payment is also taken through Paypal, however the commissioner is responsible for any extra fees.
       </li>
       <li>
-        <span style="font-weight: bold">Delivery:</span> Once payment is received and you are happy with your commission, you will receive the artwork in (insert file format here)!
+        <span style="font-weight: bold">Delivery:</span> Once payment is received and you are happy with your commission, you will receive the artwork in png! You can
+        also receive it in another file format if requested.
       </li>
     </ol>
   </div>
