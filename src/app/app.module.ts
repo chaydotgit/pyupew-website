@@ -10,6 +10,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { FooterComponent } from './footer/footer.component';
 import { WorkComponent } from './work/work.component';
 import { SupportComponent } from './support/support.component';
+import { ModalWrapperComponent } from './modal-wrapper/modal-wrapper.component';
+import { TosComponent } from './tos/tos.component';
 
 @NgModule({
   declarations: [
@@ -20,13 +22,14 @@ import { SupportComponent } from './support/support.component';
     FooterComponent,
     WorkComponent,
     SupportComponent,
+    ModalWrapperComponent,
+    TosComponent,
   ],
   imports: [
     BrowserModule,
     NgbModule,
     RouterOutlet,
     AppRoutingModule,
-
   ],
   providers: [],
   bootstrap: [AppComponent]

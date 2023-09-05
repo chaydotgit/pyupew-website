@@ -29,9 +29,10 @@
 
   <h3><i class="bi bi-stars"></i> Rules <i class="bi bi-stars"></i></h3>
   <p class="text-center">
-    Please read my terms of service before requesting a commission from me.
+    Please click the button below to read my Terms of Service. Everything covered in my Terms of Service applies unless stated otherwise.
   </p>
-  <div class="button" style="position: center" (click)="openTerms()"><i class="bi bi-exclamation-triangle"></i> Terms of Service <i class="bi bi-exclamation-triangle"></i></div>
+  <a class="button" routerLink="./tos"><i class="bi bi-exclamation-triangle"></i> Terms of Service <i class="bi bi-exclamation-triangle"></i></a>
+  <router-outlet></router-outlet>
   <div class="rules">
     <div class="dos">
       <span class="text-center" style="font-family: silkscreennormal; display: block; font-size: x-large;">Dos <i class="bi bi-check-circle"></i></span>
@@ -55,7 +56,6 @@
   <h5 style="font-family: silkscreennormal">important notes</h5>
   <div class="info" style="text-align: left; margin: auto">
     <ul>
-      <li>Everything covered in my Terms of Service applies unless stated otherwise.</li>
       <li>Commissions can take upwards of 3 months to complete depending on the complexity! Please do not expect the
       artwork to be done before then. You will be given updates throughout the process as well if I run into any technical
         difficulties that will prolong the time until delivery.</li>
