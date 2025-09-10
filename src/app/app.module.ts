@@ -8,10 +8,12 @@ import { CommissionsComponent } from './commissions/commissions.component';
 import { HomeComponent } from './home/home.component';
 import { AppRoutingModule } from './app-routing.module';
 import { FooterComponent } from './footer/footer.component';
-import { WorkComponent } from './work/work.component';
+import { GalleryComponent } from './gallery/gallery.component';
 import { SupportComponent } from './support/support.component';
 import { ModalWrapperComponent } from './modal-wrapper/modal-wrapper.component';
 import { TosComponent } from './tos/tos.component';
+import {ReactiveFormsModule} from "@angular/forms";
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -20,7 +22,7 @@ import { TosComponent } from './tos/tos.component';
     CommissionsComponent,
     HomeComponent,
     FooterComponent,
-    WorkComponent,
+    GalleryComponent,
     SupportComponent,
     ModalWrapperComponent,
     TosComponent,
@@ -30,6 +32,8 @@ import { TosComponent } from './tos/tos.component';
     NgbModule,
     RouterOutlet,
     AppRoutingModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

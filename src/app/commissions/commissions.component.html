@@ -200,7 +200,7 @@
     </div>
 
     <div class="example-item">
-      <img src="assets/images/full.jpg">
+      <img src="../../assets/images/full.jpg">
     </div>
   </div>
 
@@ -298,16 +298,23 @@
     <i class="bi bi-heart"></i>
     Commission Request Template
   </div>
-  <div class="template">
-    <ul>
-      <li>Your Email / Discord:</li>
-      <li>Commission Type (Pixel, Pop Art, Sketch, Lineart, Full): </li>
-      <li>Number of Characters: </li>
-      <li>Detailed Background (Yes/No): </li>
-      <li>Basic Commission Description: </li>
-      <li>Reference Images: </li>
-      <li>Would you like this to be a private commission? (Yes/No):</li>
-    </ul>
+  <div class="template" formGroupName="commissionForm">
+    <label for="contact">Email or Discord: </label><input type="text" id="contact" formControlName="contact">
+    <label for="type">Commission Type: </label>
+      <select formControlName="type" id="type">
+        <option value="pixel">Pixel</option>
+        <option value="pop">Pop Art</option>
+        <option value="sketch">Sketch</option>
+        <option value="lineart">Line Art</option>
+        <option value="full">Full</option>
+      </select>
+    <label for="numCharacters">Number of Characters (max of 5): </label><input type="number" id="numCharacters" formControlName="numCharacters" min="1" max="5">
+    <span><label for="hasBackground">Detailed Background: </label><input id="hasBackground" type="checkbox" formControlName="hasBackground"></span>
+    <label for="description">Basic Commission Description: </label><input id="description" type="text" formControlName="description">
+    <span><label for="refImages">Reference Images: </label><input id="refImages" type="image" formControlName="refImages"></span>
+    <span><label for="isPrivate">Private Commission:  </label> <input id="isPrivate" type="checkbox" formControlName="isPrivate"></span>
+    <p><input type="submit" value="Submit"></p>
   </div>
+  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSckmaFTK3BoCZiQxxN0JDf6oMd1zSXEKJEjizZSh2AW1ltkHA/viewform?embedded=true" width="640" height="1398" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 
 </div>

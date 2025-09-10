@@ -37,7 +37,7 @@ hr.rounded {
   padding: 10px 10px 10px;
 }
 
-.fa {
+.fa-brands {
   padding: 10px;
   font-size: 25px !important;
   width: 50px;
@@ -82,11 +82,17 @@ hr.rounded {
     padding: 30px 40px 30px;
     margin: 20px 100px;
   }
+  .latest-artwork {
+    max-width: 600px
+  }
 }
 
 @media screen and (min-width: 1280px) {
   .welcome {
     padding: 30px 60px 30px;
     margin: 20px 250px;
+  }
+  .latest-artwork {
+    max-width: 700px;
   }
 }
