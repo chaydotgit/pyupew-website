@@ -12,7 +12,6 @@ import { GalleryComponent } from './gallery/gallery.component';
 import { SupportComponent } from './support/support.component';
 import { ModalWrapperComponent } from './modal-wrapper/modal-wrapper.component';
 import { TosComponent } from './tos/tos.component';
-import {ReactiveFormsModule} from "@angular/forms";
 import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
@@ -32,7 +31,6 @@ import {HttpClientModule} from "@angular/common/http";
     NgbModule,
     RouterOutlet,
     AppRoutingModule,
-    ReactiveFormsModule,
     HttpClientModule
   ],
   providers: [],

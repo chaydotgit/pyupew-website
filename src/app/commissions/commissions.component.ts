@@ -19,15 +19,7 @@ export class ContactModalContent {
 })
 export class CommissionsComponent implements OnInit {
   commissionStatus = false;
-  commissionForm = new FormGroup({
-    contact: new FormControl(),
-    type: new FormControl(),
-    numCharacters: new FormControl(),
-    hasBackground: new FormControl(),
-    description: new FormControl(),
-    refImages: new FormControl(),
-    isPrivate: new FormControl()
-  });
+
   constructor(private modalService: NgbModal) { }
 
   ngOnInit(): void {
