@@ -1,0 +1,35 @@
+.gallery {
+  display: flex;
+  flex-wrap: wrap;     /* allow columns to wrap on smaller screens */
+  gap: 16px;
+  padding: 10px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  flex: 1 1 calc(25% - 12px);   /* 4 columns by default */
+  min-width: 0;                  /* avoid overflow */
+}
+
+.column img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 6px;
+}
+
+/* Tablet: 2 columns */
+@media (max-width: 1024px) {
+  .column {
+    flex-basis: calc(50% - 12px);
+  }
+}
+
+/* Phone: 1 column */
+@media (max-width: 640px) {
+  .column {
+    flex-basis: 100%;
+  }
+}

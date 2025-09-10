@@ -1,15 +1,7 @@
-import { Component, OnInit } from '@angular/core';
-import { NgbActiveModal, NgbModal } from "@ng-bootstrap/ng-bootstrap";
-
-@Component({
-  selector: 'contact-modal',
-  templateUrl: '../contact-modal.html',
-})
-
-export class ContactModalContent {
-  constructor(public activeModal: NgbActiveModal) {
-  }
-}
+import {Component, OnInit} from '@angular/core';
+import {NgbModal} from "@ng-bootstrap/ng-bootstrap";
+import {ContactModalContent} from "./contact-modal-content.component";
+import {ArtworkService} from "../shared/artwork.service";
 
 @Component({
   selector: 'app-home',
@@ -18,13 +10,16 @@ export class ContactModalContent {
 })
 export class HomeComponent implements OnInit {
 
-  constructor(private modalService: NgbModal) { }
+  constructor(private modalService: NgbModal,
+              private artworkService: ArtworkService) { }
+
+  latestArtworkPath: string | null = null;
 
   ngOnInit(): void {
+    this.artworkService.getLatestOne().subscribe( latest => this.latestArtworkPath = latest);
   }
 
   open() {
     this.modalService.open(ContactModalContent);
   }
-
 }
