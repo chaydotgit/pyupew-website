@@ -1,0 +1,6 @@
+<div class="gallery">
+  <div class="column" *ngFor="let col of [0,1,2,3]">
+    <img *ngFor="let src of getColumnImages(col)"
+         [src]="src" alt="Artwork" loading="lazy" />
+  </div>
+</div>
